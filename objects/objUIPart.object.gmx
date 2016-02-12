@@ -54,7 +54,7 @@ zui_set_scale(0, 0);
           <argument>
             <kind>1</kind>
             <string>  var j = 0;
-   repeat(38){
+   repeat(41){
     sys.ptp[__index,j] = ptp[j]
     j += 1
    }
@@ -111,7 +111,7 @@ if (animate &lt; 0) {
 
 i=0
 j=0
-repeat(38){
+repeat(41){
 if ptp[i] !=sys.ptp[__index,i]{
  sys.ptp[__index,i] = ptp[i]
  j=1

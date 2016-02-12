@@ -4,7 +4,7 @@ var i=0, aa=index;
 
 sys.pt[sys.parts] = part_type_create()
 
-repeat(38){
+repeat(50){
  sys.ptp[sys.parts,i]=sys.ptp[aa,i]
  i+=1
 }

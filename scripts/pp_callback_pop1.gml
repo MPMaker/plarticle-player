@@ -51,12 +51,15 @@ if val1 = 8{
   with (zui_create(xx,yy, objUIMenupop, -10)) {
    zui_set_anchor(0,0)
    zui_set_size(120,24)
-   indexs=3
+   indexs=6
    val1=8
    target = pp
     captions[0]="color1"
     captions[1]="color2"
     captions[2]="color3"
+    captions[3]="color mix"
+    captions[4]="color rgb"
+    captions[5]="color hsv"
   }
  }
 }

@@ -99,9 +99,11 @@
       <script>scripts\pp_set_value2.gml</script>
       <script>scripts\pp_set_value_or.gml</script>
       <script>scripts\pp_set_value_bgr.gml</script>
+      <script>scripts\pp_callback_pop1.gml</script>
       <script>scripts\pp_callback_pop2.gml</script>
       <script>scripts\pp_callback_pop3.gml</script>
       <script>scripts\string_format_ext.gml</script>
+      <script>scripts\pp_to_text.gml</script>
       <script>scripts\export_clipboard.gml</script>
       <script>scripts\export_file.gml</script>
       <script>scripts\project_save.gml</script>
@@ -123,7 +125,6 @@
       <script>scripts\deg_to_hex.gml</script>
       <script>scripts\hex_to_deg.gml</script>
       <script>scripts\pp_record.gml</script>
-      <script>scripts\pp_callback_pop1.gml</script>
     </scripts>
     <script>scripts\string_set_length.gml</script>
     <script>scripts\url_encode.gml</script>
@@ -152,13 +153,14 @@
       <object>objects\objUILabel</object>
     </objects>
     <objects name="pp">
+      <object>objects\objInit</object>
       <object>objects\sys</object>
+      <object>objects\cam</object>
       <object>objects\objUIGetNo</object>
       <object>objects\objUIGetHex</object>
       <object>objects\objUIPartValue</object>
       <object>objects\objUIPartColor</object>
       <object>objects\objUIPalette</object>
-      <object>objects\cam</object>
       <object>objects\objUIMenuBar</object>
       <object>objects\objUIMenupop</object>
       <object>objects\objUIMaintree</object>
@@ -173,7 +175,6 @@
       <object>objects\objUIPart</object>
       <object>objects\objUIEmit</object>
       <object>objects\objUIOption</object>
-      <object>objects\objInit</object>
     </objects>
   </objects>
   <rooms name="rooms">

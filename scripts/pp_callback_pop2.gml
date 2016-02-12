@@ -30,6 +30,22 @@ with (zui_main()) {
    if vv = 9 {caption+='1'}
    if vv = 10 {caption+='2'}
    if vv = 11 {caption+='3'}
+   if pp.ptp[8] = 4 {
+    if vv = 9 {caption+=' R min'}
+    if vv = 10 {caption+=' R max'}
+    if vv = 11 {caption+=' G min'}
+    if vv = 37 {caption+=' G max'}
+    if vv = 38 {caption+=' B min'}
+    if vv = 39 {caption+=' B max'}
+   }
+   if pp.ptp[8] = 5 {
+    if vv = 9 {caption+=' H min'}
+    if vv = 10 {caption+=' H max'}
+    if vv = 11 {caption+=' S min'}
+    if vv = 37 {caption+=' S max'}
+    if vv = 38 {caption+=' V min'}
+    if vv = 39 {caption+=' V max'}
+   }
    draggable = 1;
   }
   

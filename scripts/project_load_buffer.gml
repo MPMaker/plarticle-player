@@ -23,7 +23,7 @@ i=0
 repeat(sys.parts){
 sys.pt[i] = part_type_create()
 j=0
-repeat(38){
+repeat(50){
 sys.ptp[i,j] = buffer_read(buffer, buffer_f32)
 j+=1
 }

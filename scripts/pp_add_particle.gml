@@ -40,6 +40,19 @@ sys.ptp[sys.parts,34] = 0 //스텝
 sys.ptp[sys.parts,35] = 0
 sys.ptp[sys.parts,36] = 0 //사망
 sys.ptp[sys.parts,37] = 0
+sys.ptp[sys.parts,38] = 0 //컬러2
+sys.ptp[sys.parts,39] = 0
+sys.ptp[sys.parts,40] = 0
+
+sys.ptp[sys.parts,41] = 0
+sys.ptp[sys.parts,42] = 0
+sys.ptp[sys.parts,43] = 0
+sys.ptp[sys.parts,44] = 0
+sys.ptp[sys.parts,45] = 0
+sys.ptp[sys.parts,46] = 0
+sys.ptp[sys.parts,47] = 0
+sys.ptp[sys.parts,48] = 0
+sys.ptp[sys.parts,49] = 0
 
 pp_set_particle(sys.parts)
 

@@ -25,6 +25,16 @@ if sys.ptp[i,8] = 1{
 if sys.ptp[i,8] = 2{
  part_type_color3(sys.pt[i],sys.ptp[i,9],sys.ptp[i,10],sys.ptp[i,11]);
 }
+if sys.ptp[i,8] = 3{
+ part_type_color_mix(sys.pt[i],sys.ptp[i,9],sys.ptp[i,10]);
+}
+if sys.ptp[i,8] = 4{
+ part_type_color_rgb(sys.pt[i],sys.ptp[i,9],sys.ptp[i,38],sys.ptp[i,10],sys.ptp[i,39],sys.ptp[i,11],sys.ptp[i,40]);
+}
+if sys.ptp[i,8] = 5{
+ part_type_color_hsv(sys.pt[i],sys.ptp[i,9],sys.ptp[i,38],sys.ptp[i,10],sys.ptp[i,39],sys.ptp[i,11],sys.ptp[i,40]);
+}
+
 if sys.ptp[i,12] = 0{
  part_type_alpha1(sys.pt[i],sys.ptp[i,13]);
 }
@@ -34,6 +44,7 @@ if sys.ptp[i,12] = 1{
 if sys.ptp[i,12] = 2{
  part_type_alpha3(sys.pt[i],sys.ptp[i,13],sys.ptp[i,14],sys.ptp[i,15]);
 }
+
 part_type_speed(sys.pt[i],sys.ptp[i,16],sys.ptp[i,17],sys.ptp[i,18],sys.ptp[i,19]);
 part_type_direction(sys.pt[i],sys.ptp[i,20],sys.ptp[i,21],sys.ptp[i,22],sys.ptp[i,23]);
 part_type_gravity(sys.pt[i],sys.ptp[i,24],sys.ptp[i,25]);

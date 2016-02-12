@@ -12,10 +12,18 @@ repeat(sys.parts){
  sys.ptp[i,5] = irandom(100)/1000
  sys.ptp[i,6] = irandom(90)/100+0.1
  sys.ptp[i,7] = irandom(90)/100+0.1
- sys.ptp[i,8] = irandom(2) //컬러
+ sys.ptp[i,8] = irandom(5) //컬러
  sys.ptp[i,9] = irandom(c_white)
  sys.ptp[i,10] = irandom(c_white)
  sys.ptp[i,11] = irandom(c_white)
+ if sys.ptp[i,8] = 4 or  sys.ptp[i,8] = 5 {
+  sys.ptp[i,9] = irandom(255)
+  sys.ptp[i,10] = irandom(255)
+  sys.ptp[i,11] = irandom(255)
+  sys.ptp[i,38] = irandom_range(sys.ptp[i,9],255)
+  sys.ptp[i,39] = irandom_range(sys.ptp[i,10],255)
+  sys.ptp[i,49] = irandom_range(sys.ptp[i,11],255)
+ }
  sys.ptp[i,12] = irandom(2) //알파
  sys.ptp[i,13] = irandom(90)/100+0.1
  sys.ptp[i,14] = irandom(90)/100+0.1

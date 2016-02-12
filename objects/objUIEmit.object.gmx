@@ -30,6 +30,8 @@
 close = 0;
 animate = 0;
 
+
+
 zui_set_scale(0, 0);
 </string>
           </argument>

@@ -25,7 +25,7 @@ if cc = 0{
    __index = i
    var origin = id;
    var j = 0;
-   repeat(38){
+   repeat(41){
     ptp[j] = sys.ptp[i,j]
     j += 1
    }
@@ -242,6 +242,7 @@ if cc = 0{
    with (zui_create(148, 136, objUILabel)) {
     halign = 0
     caption = "1"
+    val1 = 9
     index = 0
    }
    with (zui_create(168, 136, objUIPartColor)) {
@@ -284,12 +285,79 @@ if cc = 0{
     callback = pp_callback_pop2;
    }
    
-   with (zui_create(8, 160, objUILabel)) {
+   with (zui_create(148, 160, objUILabel)) {
+    halign = 0
+    caption = "max"
+    val1 = 38
+    index = 0
+   }
+   with (zui_create(168, 136, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 9
+    values = string_format_ext(sys.ptp[i,9], 3, 4)
+   }
+   with (zui_create(168, 160, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 38
+    values = string_format_ext(sys.ptp[i,38], 3, 4)
+   }
+   with (zui_create(222, 160, objUILabel)) {
+    halign = 0
+    caption = "max"
+    val1 = 39
+    index = 0
+   }
+   with (zui_create(242, 136, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 10
+    values = string_format_ext(sys.ptp[i,10], 3, 4)
+   }
+   with (zui_create(242, 160, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 39
+    values = string_format_ext(sys.ptp[i,39], 3, 4)
+   }
+   with (zui_create(302, 160, objUILabel)) {
+    halign = 0
+    caption = "max"
+    val1 = 40
+    index = 0
+   }
+   with (zui_create(322, 136, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 11
+    values = string_format_ext(sys.ptp[i,11], 3, 4)
+   }
+   with (zui_create(322, 160, objUIGetNo)) {
+    index = 0
+    zui_set_anchor(0,0.5)
+    target = __parent
+    callback = pp_set_value;
+    val1 = 40
+    values = string_format_ext(sys.ptp[i,40], 3, 4)
+   }
+   
+   with (zui_create(8, 184, objUILabel)) {
     halign = 0
     caption = "Alpha"
     index = 0
    }
-   with (zui_create(68, 160, objUIPartValue)) {
+   with (zui_create(68, 184, objUIPartValue)) {
    zui_set_anchor(0,0.5)
     halign = 0
     index = 0
@@ -300,12 +368,12 @@ if cc = 0{
     zui_set_size(60, 24) 
     callback = pp_callback_pop1;
    }
-   with (zui_create(148, 160, objUILabel)) {
+   with (zui_create(148, 184, objUILabel)) {
     halign = 0
     caption = "1"
     index = 0
    }
-   with (zui_create(168, 160, objUIGetNo)) {
+   with (zui_create(168, 184, objUIGetNo)) {
    zui_set_anchor(0,0.5)
     halign = 0
     index = 0
@@ -315,13 +383,13 @@ if cc = 0{
     values = string(sys.ptp[i,13])
     zui_set_size(40, 24) 
    }
-   with (zui_create(222, 160, objUILabel)) {
+   with (zui_create(222, 184, objUILabel)) {
     halign = 0
     caption = "2"
     val1 = 14
     index = 0
    }
-   with (zui_create(242, 160, objUIGetNo)) {
+   with (zui_create(242, 184, objUIGetNo)) {
    zui_set_anchor(0,0.5)
     halign = 0
     index = 0
@@ -331,13 +399,13 @@ if cc = 0{
     values = string_format_ext(sys.ptp[i,14], 3, 4)
     zui_set_size(40, 24) 
    }
-   with (zui_create(302, 160, objUILabel)) {
+   with (zui_create(302, 184, objUILabel)) {
     halign = 0
     caption = "3"
     val1 = 15
     index = 0
    }
-   with (zui_create(322, 160, objUIGetNo)) {
+   with (zui_create(322, 184, objUIGetNo)) {
    zui_set_anchor(0,0.5)
     halign = 0
     index = 0
@@ -348,12 +416,12 @@ if cc = 0{
     zui_set_size(40, 24) 
    }   
 
-   with (zui_create(8, 184, objUILabel)) {
+   with (zui_create(8, 208, objUILabel)) {
     halign = 0
     caption = "Use Blend"
     index = 0
    }
-   with (zui_create(88,184, objUICheckbox)) {
+   with (zui_create(88,208, objUICheckbox)) {
     index = 0
     zui_set_anchor(0.5,0.5)
     target = __parent

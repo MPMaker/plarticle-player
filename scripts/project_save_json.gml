@@ -20,7 +20,7 @@ ds_map_add(map,'parts',sys.parts)
 i=0
 repeat(sys.parts){
 j=0
-repeat(38){
+repeat(50){
 ds_map_add(map,'ptp'+string(i)+'_'+string(j),sys.ptp[i,j])
 j+=1
 }

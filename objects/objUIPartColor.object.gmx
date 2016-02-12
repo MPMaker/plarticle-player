@@ -56,13 +56,45 @@ __index = 0
           <argument>
             <kind>1</kind>
             <string>__lock=0
-if val1 = 10 and __parent.ptp[8]=0{
- __lock=1
+
+if val1 &gt;= 0 and __parent.object_index = objUIPart{
+ if __parent.ptp[8]=0{
+  if val1 = 10 {
+   __lock=1
+  }
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8]=1{
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8]=3{
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8] = 4 or __parent.ptp[8] = 5{
+  if val1 = 9 {
+   __lock=1
+  }
+  if val1 = 10 {
+   __lock=1
+  }
+  if val1 = 11 {
+   __lock=1
+  }
+ }
 }
 
-if val1 = 11 and __parent.ptp[8]&lt;2{
- __lock=1
-}
+
+
+
 
 value = __parent.ptp[val1]
 </string>

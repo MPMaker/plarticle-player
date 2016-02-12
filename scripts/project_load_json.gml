@@ -27,7 +27,7 @@ if map >= 0 {
  repeat(sys.parts){
  sys.pt[i] = part_type_create()
  j=0
- repeat(38){
+ repeat(50){
  sys.ptp[i,j] = ds_map_find_value(map,'ptp'+string(i)+'_'+string(j))
  j+=1
  }

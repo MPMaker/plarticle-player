@@ -54,26 +54,90 @@ val1=-1
           <argument>
             <kind>1</kind>
             <string>__lock=0
-
-if val1 = 10 and __parent.ptp[8]=0{
- __lock=1
+if val1 &gt;= 0 and __parent.object_index = objUIPart{
+ if __parent.ptp[8]=0{
+  if val1 = 10 {
+   __lock=1
+  }
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8]=1{
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8]=3{
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8] = 4 or __parent.ptp[8] = 5{
+  if val1 = 9 {
+   __lock=1
+  }
+  if val1 = 10 {
+   __lock=1
+  }
+  if val1 = 11 {
+   __lock=1
+  }
+ }
+ 
+ if val1 = 14 and __parent.ptp[12]=0{
+  __lock=1
+ }
+ 
+ if val1 = 15 and __parent.ptp[12]&lt;2{
+  __lock=1
+ }
+ 
+ if val1 = 0 and val2&gt;0 and __parent.ptp[0] mod 2=0{
+  __lock=1
+ }
+ 
+ if __parent.ptp[8] != 4 and __parent.ptp[8] != 5{
+  if val1 = 38 {
+   __lock=1
+  }
+  if val1 = 39 {
+   __lock=1
+  }
+  if val1 = 40 {
+   __lock=1
+  }
+ }
+ 
+ if __parent.ptp[8] = 4 {
+  if val1 = 38 {
+   caption = "R";
+  }
+  if val1 = 39 {
+   caption = "G";
+  }
+  if val1 = 40 {
+   caption = "B";
+  }
+ }
+ 
+ if __parent.ptp[8] = 5 {
+  if val1 = 38 {
+   caption = "H";
+  }
+  if val1 = 39 {
+   caption = "S";
+  }
+  if val1 = 40 {
+   caption = "V";
+  }
+ }
 }
 
-if val1 = 11 and __parent.ptp[8]&lt;2{
- __lock=1
-}
 
-if val1 = 14 and __parent.ptp[12]=0{
- __lock=1
-}
-
-if val1 = 15 and __parent.ptp[12]&lt;2{
- __lock=1
-}
-
-if val1 = 0 and val2&gt;0 and __parent.ptp[0] mod 2=0{
- __lock=1
-}
 </string>
           </argument>
         </arguments>

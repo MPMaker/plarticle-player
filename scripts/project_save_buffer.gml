@@ -20,7 +20,7 @@ buffer_write(buffer, buffer_u32, sys.parts)
 i=0
 repeat(sys.parts){
 j=0
-repeat(38){
+repeat(50){
 buffer_write(buffer, buffer_f32, sys.ptp[i,j])
 j+=1
 }
