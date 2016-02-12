@@ -75,6 +75,17 @@ var i=argument0, cc = 0;
     callback = pp_set_value_bgr;
     value = sys.backs
    }
+   with (zui_create(266, 96, objUILabel)) {
+    halign = 0
+    caption = "Record Background"
+    index = 0
+   }
+   with (zui_create(406, 96, objUICheckbox)) {
+    index = 0
+    zui_set_anchor(0.5,0.5)
+    callback = pp_set_value_bgr_rec;
+    value = sys.backr
+   }
    with (zui_create(8, 128, objUIButton)) {
     zui_set_anchor(0, 0.5);
     zui_set_size(128, 24);

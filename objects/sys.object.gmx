@@ -49,7 +49,8 @@ instance_create(x-80,y-16,cam)
 projectname='noname'
 lite=0
 if os_get_config() = "lite"{lite=1}
-ver='v0.9.4.0'
+ver='v0.9.6.0'
+format_ver = 0
 
 
 if lite=1{ver='lite '+ver}
@@ -64,6 +65,7 @@ mouseact=-1
 //surf=surface_create(1024,640)
 
 backg = -1
+backr = 0
 backs = 0
 sprites=0
 parts=0
@@ -333,8 +335,24 @@ if sys.record=0 and surface_exists(surf){
 
 if sys.record=1 and surface_exists(surf){
  part_system_position(Sname,-view_xview[0]-160,-view_yview[0]-24)
+  
  surface_set_target(surf);
- draw_clear_alpha(0,0)
+ if backr = 0 {
+  draw_clear_alpha(0,0)
+ } else {
+  with(objUIback){
+   if background_exists(sys.backg) {
+    if sys.backs = 0 {
+     draw_background_tiled(sys.backg,__x-160,__y)
+    } else {
+     draw_background_stretched(sys.backg,__x-160,__y - 24,__width,__height)
+    }
+   } else {
+    draw_set_colour(background_colour)
+    draw_rectangle(-1,-1,view_wview[0],view_hview[0],0)
+   }
+  }
+ }
  part_system_drawit(Sname);
  surface_reset_target();
  part_system_position(Sname,0,0)

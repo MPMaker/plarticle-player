@@ -3,6 +3,7 @@
 var i = 0, j = 0;
 
 var buffer = buffer_create(256,buffer_grow,1);
+buffer_write(buffer, buffer_s32, sys.format_ver)
 buffer_write(buffer, buffer_u32, sys.sprites)
 i=0
 repeat(sys.sprites){

@@ -3,7 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles"/>
+  <datafiles number="3" name="datafiles">
+    <datafile>
+      <name>new_io.pp2</name>
+      <exists>-1</exists>
+      <size>2048</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>new_io.pp2</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\ZUI engine</extension>
     <extension index="1">extensions\htmlsave</extension>
@@ -99,6 +117,7 @@
       <script>scripts\pp_set_value2.gml</script>
       <script>scripts\pp_set_value_or.gml</script>
       <script>scripts\pp_set_value_bgr.gml</script>
+      <script>scripts\pp_set_value_bgr_rec.gml</script>
       <script>scripts\pp_callback_pop1.gml</script>
       <script>scripts\pp_callback_pop2.gml</script>
       <script>scripts\pp_callback_pop3.gml</script>
