@@ -49,12 +49,13 @@ instance_create(x-80,y-16,cam)
 projectname='noname'
 lite=0
 if os_get_config() = "lite"{lite=1}
-ver='v0.9.6.0'
+ver='v2.9.6.0'
 format_ver = 0
 
 
 if lite=1{ver='lite '+ver}
-window_set_caption('파티클 플레이어2 '+ver);
+
+window_set_caption('파티클 플레이어 ' + ver);
 
 
 vx=0
