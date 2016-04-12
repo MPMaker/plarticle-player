@@ -179,7 +179,7 @@ if (zui_get_hover()) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="72">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -196,14 +196,7 @@ if (zui_get_hover()) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if background_exists(sys.backg) {
- if sys.backs = 0 {
-  draw_background_tiled(sys.backg,__x,__y)
- } else {
-  draw_background_stretched(sys.backg,__x,__y,__width,__height)
- }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

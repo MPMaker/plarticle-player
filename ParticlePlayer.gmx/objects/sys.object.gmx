@@ -474,7 +474,15 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_navy)
+            <string>if background_exists(sys.backg) {
+ if sys.backs = 0 {
+  draw_background_tiled(sys.backg,view_xview[0],view_yview[0])
+ } else {
+  draw_background_stretched(sys.backg,view_xview[0],view_yview[0],objUIback.__width,objUIback.__height)
+ }
+}
+
+draw_set_colour(c_navy)
 draw_line(x-16,y,x+16,y)
 draw_line(x,y-16,x,y+16)
 </string>
