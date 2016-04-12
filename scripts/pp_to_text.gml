@@ -1,4 +1,4 @@
-///pp_to_text()
+/// pp_to_text()
 
 var str = '// init particle.';
 var i = 0;
